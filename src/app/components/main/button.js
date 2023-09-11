@@ -5,7 +5,7 @@ const Button1 = ({ texto }) => {
     <div className="flex flex-col w-full" id="NewRootRoot">
       <div className="flex items-center justify-center mt-8">
         <button
-          className="border-solid shadow-[0px_2px_2px_0px_rgba(0,_0,_0,_0.25)] bg-[#0984e3] flex flex-col items-center pt-0.5 pb-1 border-black border rounded-lg"
+          className="border-solid shadow-[0px_2px_2px_0px_rgba(0,_0,_0,_0.25)] bg-[#0984e3] hover:bg-[#0006A1E8] flex flex-col items-center pt-0.5 pb-1 border-black border rounded-lg"
           id="Button1"
           style={{ width: '200px', height: '30px', overflow: 'hidden',}}
         >
