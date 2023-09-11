@@ -19,4 +19,18 @@ export default function Header(props) {
       </>
    )
 }
-  
+
+export function HeaderLogin() {
+   return (
+      <>
+         <div className="w-full h-7 justify-between inline-flex bg-[#35363a]">
+            <Logo />
+            <div className="flex flex-row mr-4">
+               <img
+                  src="https://file.rendit.io/n/pShussQGcDIhAOtycBli.svg"
+               />
+            </div>
+         </div>
+      </>
+   )
+}
