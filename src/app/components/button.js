@@ -7,7 +7,7 @@ const Button1 = ({ texto }) => {
         <button
           className="border-solid shadow-[0px_2px_2px_0px_rgba(0,_0,_0,_0.25)] bg-[#0984e3] flex flex-col items-center pt-0.5 pb-1 border-black border rounded-lg"
           id="Button1"
-          style={{ width: '100px', height: '30px', overflow: 'hidden' }}
+          style={{ width: '200px', height: '30px', overflow: 'hidden',}}
         >
           <div className="text-base font-['Noto_Sans'] font-semibold tracking-[1.5] text-white">
             {texto}
