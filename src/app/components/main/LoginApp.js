@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BotaoPadrao from "./button";
+import BotaoPadrao from "./Button";
 
 export default function LoginApp(){
     return (
@@ -18,7 +18,7 @@ export default function LoginApp(){
                                 type="password" placeholder="Senha"/>
                         </div>
                         <div class="flex flex-col items-center gap-2 justify-between">
-                            <BotaoPadrao text="Logar"/>
+                            <Link href="/pages/home"><BotaoPadrao text="Logar"/></Link>
                             <a class="font-bold text-sm text-[#00a0fd] hover:text-[#0046c0]" href="#">
                                 Esqueceu sua senha?
                             </a>
@@ -27,11 +27,11 @@ export default function LoginApp(){
                     <div className="flex flex-col justify-center items-center gap-2">
                         <div className="text-xs font-bold text-[#ececec]">
                             Não tem uma conta?{" "}
-                            <a class="text-xs text-[#00a0fd] hover:text-[#0046c0] contents" href="#"> Inscrever </a>
+                            <a className="text-xs text-[#00a0fd] hover:text-[#0046c0] contents" href="#"> Inscrever </a>
                         </div>
                         <div className="text-xs font-bold text-[#ececec]">
                             Fazer login com a{" "}
-                            <a class="text-xs text-[#00a0fd] hover:text-[#0046c0] contents" href="https://www.portoseguro.com.br/pdc/login" target="_blank"> Porto Seguro </a>
+                            <a className="text-xs text-[#00a0fd] hover:text-[#0046c0] contents" href="https://www.portoseguro.com.br/pdc/login" target="_blank"> Porto Seguro </a>
                         </div>
                     </div>
                 </div>

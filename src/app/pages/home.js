@@ -1,7 +1,7 @@
 import UserInfoCard from "../components/main/UserCard";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
-import BotaoPadrao from "../components/main/button";
+import BotaoPadrao from "../components/main/Button";
 
 
 export default function Home() {
