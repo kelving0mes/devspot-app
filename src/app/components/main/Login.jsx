@@ -32,8 +32,9 @@ export default function LoginApp(){
                     />
                     <label for="myCheckbox" class="font-['Noto_Sans'] font-semibold text-white mt-px">Lembrar de mim</label>
                 </div>
+                <Link href="/pages/home"> <Button1 texto="Login"/></Link>
                 <div className="self-stretch relative flex flex-col mb-1 pb-10 items-start">
-                    <Button1 className="w-1/2" height="40px" texto="Login"/>
+                    
                     <div className="text-xs font-['Noto_Sans'] underline font-semibold text-[#0984e3] relative w-1/2">
                         Esqueceu sua senha?
                     </div>
