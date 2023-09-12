@@ -16,7 +16,7 @@ export default function Home() {
       <div className="static flex flex-col justify-center items-center w-full space-y-20 gap-5">
         <div className="flex items-center gap-5">
           <img
-            src="../Images/fallen.jpg"
+            src="../Images/fallen.jpg" alt="Imagem de perfil"
             style={{
               width: '100px',
               height: '100px',
