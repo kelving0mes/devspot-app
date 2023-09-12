@@ -16,7 +16,7 @@ export default function Home() {
       <div className="flex mt-4 justify-center"> 
         <div className="ml-auto mr-4 flex items-center"> 
           <img 
-            src="fallen.jpg" 
+            src="/fallen.jpg" 
             style={{ 
               width: '100px', 
               height: '100px', 

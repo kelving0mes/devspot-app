@@ -1,5 +1,3 @@
-import UserInfoCard from "./components/main/UserCard";
-import Button1 from "./components//main/button";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Link from "next/link";
