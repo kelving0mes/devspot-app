@@ -13,7 +13,6 @@ export default function Vistoria() {
             <Bike1/>
             <Bike2/>
             <Footer/>
-            
         </main>
     )
 }

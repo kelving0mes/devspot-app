@@ -1,8 +1,8 @@
 import UserInfoCard from "../components/main/UserCard";
-import Button1 from "../components/main/button";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
-import Link from 'next/link';
+import BotaoPadrao from "../components/main/button";
+
 
 export default function Home() {
   return (
@@ -30,10 +30,10 @@ export default function Home() {
           />
         </div>
       </div>
-      <Button1 width="120px" height="40px" texto="Minhas Bicicletas" />
-      <Button1 width="150px" height="50px" texto="Vistorias" />
-      <Button1 width="150px" height="50px" texto="Financeiro" />
-      <Button1 width="100px" height="30px" texto="Fale Conosco FAQ" />
+      <BotaoPadrao width="120px" height="40px" text="Minhas Bicicletas" />
+      <BotaoPadrao width="150px" height="50px" text="Vistorias" />
+      <BotaoPadrao width="150px" height="50px" text="Financeiro" />
+      <BotaoPadrao width="100px" height="30px" text="Fale Conosco FAQ" />
       <Footer/>
     </main>
   )
