@@ -18,7 +18,7 @@ export default function LoginApp(){
                                 type="password" placeholder="Senha"/>
                         </div>
                         <div class="flex flex-col items-center gap-2 justify-between">
-                            <Link href="/pages/home"><BotaoPadrao text="Logar"/></Link>
+                            <Link href="/pages/home" className="w-full" ><BotaoPadrao text="Logar"/></Link>
                             <a class="font-bold text-sm text-[#00a0fd] hover:text-[#0046c0]" href="#">
                                 Esqueceu sua senha?
                             </a>

@@ -1,36 +1,66 @@
-import Header from "./components/header/Header";
-
+import Footer from "@/app/components/footer/Footer";
+import Header from "@/app/components/header/Header";
+import BackButton from "@/app/components/main/BackButton";
+import Link from "next/link";
 
 export default function MinhasBikes() {
   return (
-    <main className="bg-white flex flex-col min-h-screen">
+    <main className="bg-white justify-center flex items-center flex-col w-full min-h-screen">
       <Header text="Minhas bicicletas" />
-      <table>
-  <thead>
-    <tr>
-      <th>Imagens</th>
-      <th scope="col">Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row"><img src="/images/bike1.jpg" width="170px" height="110px" quality={100} alt="Ilustração bicicleta"/></th>
-      <td>Vistoria Concluida</td>
-    </tr>
-    <tr>
-      <th scope="row"> <img src="/images/bike2.jpg" width="170px" height="110px"quality={100} alt="Ilustração bicicleta"/></th>
-      <td>Vistorias em análise</td>
-    </tr>
-   <tr>
-      <th scope="row"><img src="/images/bike3.jpg" width="170px" height="110px"quality={100} alt="Ilustração bicicleta"/></th>
-      <td>Não Vistoriada</td>
-    </tr>
-   <tr>
-      <th scope="row"><img src="/images/bike4.jpg"width="170px" height="110px" quality={100} alt="Ilustração bicicleta"/></th>
-      <td>Não Vistoriada</td>
-    </tr>
-  </tbody>
-</table>  
-</main>
+      <div className="container mx-auto p-4 justify-center gap-5 flex items-center flex-col">
+      <table className="table-auto text-[#35363a]">
+        <thead>
+          <tr>
+            <th className="px-4 py-2">Bicicleta</th>
+            <th className="px-4 py-2">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="px-4 py-2">
+              <img
+                src="/images/bike1.jpg"
+                alt="Ilustração bicicleta"
+                className="w-40 h-24"
+              />
+            </td>
+            <td className="px-4 py-2 text-green-600">Vistoria Concluída</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-2">
+              <img
+                src="/images/bike2.jpg"
+                alt="Ilustração bicicleta"
+                className="w-40 h-24"
+              />
+            </td>
+            <td className="px-4 py-2 text-yellow-600">Vistorias em análise</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-2">
+              <img
+                src="/images/bike3.jpg"
+                alt="Ilustração bicicleta"
+                className="w-40 h-24"
+              />
+            </td>
+            <td className="px-4 py-2 text-red-600">Não Vistoriada</td>
+          </tr>
+          <tr>
+            <td className="px-4 py-2">
+              <img
+                src="/images/bike4.jpg"
+                alt="Ilustração bicicleta"
+                className="w-40 h-24"
+              />
+            </td>
+            <td className="px-4 py-2 text-red-600">Não Vistoriada</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <Link href="/pages/home"><BackButton /></Link>
+      <Footer />
+    </main>
   )
 }

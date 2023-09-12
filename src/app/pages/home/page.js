@@ -2,26 +2,26 @@ import UserInfoCard from "../../components/main/UserCard";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import BotaoPadrao from "../../components/main/Botao";
+import Link from "next/link";
+import BackButton from "@/app/components/main/BackButton";
 
 
 export default function Home() {
   return (
     <main className="bg-white flex flex-col min-h-screen">
-      <Header text="Home"/>
-      <div className="flex mt-9 justify-center"> 
-        <div className="text-center text-3xl font-['Noto_Sans'] tracking-[3] text-[#0984e3] w-min mb-4">
-          Olá
-        </div>
+      <Header text="Home" />
+      <div className="ml-9 mt-9 text-lg text-[#00a0fd] w-self">
+            Olá Gabriel, o que deseja fazer hoje?
       </div>
-      <div className="flex mt-4 justify-center"> 
-        <div className="ml-auto mr-4 flex items-center"> 
-          <img 
-            src="/fallen.jpg" 
-            style={{ 
-              width: '100px', 
-              height: '100px', 
-              borderRadius: '50%' 
-            }} 
+      <div className="static flex flex-col justify-center items-center w-full space-y-20 gap-5">
+        <div className="flex items-center gap-5">
+          <img
+            src="../Images/fallen.jpg"
+            style={{
+              width: '100px',
+              height: '100px',
+              borderRadius: '50%'
+            }}
           />
           <UserInfoCard
             name="Gabriel Toledo"
@@ -29,12 +29,15 @@ export default function Home() {
             email="professor@fallenstore.com"
           />
         </div>
+        <div className="gap-2 w-self justify-center items-center flex flex-col relative">
+          <Link href="/pages/minhasbikes"className="w-full"><BotaoPadrao text="Minhas Bicicletas"/></Link>
+          <Link href="/pages/vistoria"className="w-full"><BotaoPadrao text="Vistorias"/></Link>
+          <BotaoPadrao text="Financeiro" />
+          <BotaoPadrao text="Fale Conosco FAQ" />
+        </div>
+       <Link href="/"><BackButton/></Link>
       </div>
-      <BotaoPadrao width="120px" height="40px" text="Minhas Bicicletas" />
-      <BotaoPadrao width="150px" height="50px" text="Vistorias" />
-      <BotaoPadrao width="150px" height="50px" text="Financeiro" />
-      <BotaoPadrao width="100px" height="30px" text="Fale Conosco FAQ" />
-      <Footer/>
+      <Footer />
     </main>
   )
 }
