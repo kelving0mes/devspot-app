@@ -1,14 +1,13 @@
 import Button1 from "./button";
+import Link from 'next/link';
 
 export default function LoginApp(){
     return(
         <div className="flex flex-col justify-center gap-5 w-full min-h-screen items-center bg-[#35363a]">
-            <div className="flex flex-col gap-5 width:auto items-start">
-                <div className="text-3xl font-['Noto_Sans'] font-semibold tracking-[1.6] text-white">
-                    Bem vindo!
-                </div>
+            <div className="flex flex-col gap-5 width:auto items-start text-3xl font-['Noto_Sans'] font-semibold tracking-[1.6] text-white">
+                Bem vindo!
             </div>
-            <div className="w-1/2 flex flex-col gap-1 justify-center  items-start">
+            <div className="w-1/2 flex flex-col gap-1 justify-center items-start">
                 <div
                     className="bg-[#ececec] self-stretch flex flex-col justify-center mb-3 pl-3 h-10 items-start rounded-lg"
                     id="EMAIL"

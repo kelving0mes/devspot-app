@@ -6,8 +6,14 @@ import Header from "./components/header/Header";
 export default function Home() {
   return (
     <main className="bg-white flex flex-col min-h-screen">
-      <Header text="Home" />
-      <div className="flex w-full justify mt-9 ">
+      <Header text="Home"/>
+      <div className="flex mt-9 justify-center"> 
+        <div className="text-center text-3xl font-['Noto_Sans'] tracking-[3] text-[#0984e3] w-min mb-4">
+          Olá
+        </div>
+      </div>
+      <div className="flex mt-4 justify-center"> 
+        <div className="ml-auto mr-4 flex items-center"> 
           <img 
             src="fallen.jpg" 
             style={{ 
@@ -21,6 +27,7 @@ export default function Home() {
             cpf="444.765.678-98"
             email="professor@fallenstore.com"
           />
+        </div>
       </div>
       <Button1 width="120px" height="40px" texto="Minhas Bicicletas" />
       <Button1 width="150px" height="50px" texto="Vistorias" />
