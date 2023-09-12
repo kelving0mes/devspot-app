@@ -7,7 +7,7 @@ export default function(){
                 id="Ellipse"
             >
                 <img
-                    src="https://file.rendit.io/n/AdOJrCMFelHb3VX6VTG3.svg"
+                    src="https://file.rendit.io/n/AdOJrCMFelHb3VX6VTG3.svg" alt="ícone ilustrativo seta" 
                     className="align-middle"
                     id="Arrow"
                 />

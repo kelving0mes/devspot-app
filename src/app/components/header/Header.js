@@ -7,7 +7,7 @@ export default function Header(props) {
             <Logo/>
             <div className="flex flex-row mr-4">
                <img
-                  src="https://file.rendit.io/n/pShussQGcDIhAOtycBli.svg"
+                  src="https://file.rendit.io/n/pShussQGcDIhAOtycBli.svg" alt="ícone ilustrativo navbar"
                />
             </div>
          </div>
@@ -27,7 +27,7 @@ export function HeaderLogin() {
             <Logo />
             <div className="flex flex-row mr-4">
                <img
-                  src="https://file.rendit.io/n/pShussQGcDIhAOtycBli.svg"
+                  src="https://file.rendit.io/n/pShussQGcDIhAOtycBli.svg" alt="ícone ilustrativo navbar"
                />
             </div>
          </div>
