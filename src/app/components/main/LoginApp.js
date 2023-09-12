@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BotaoPadrao from "./Button";
+import BotaoPadrao from "./Botao";
 
 export default function LoginApp(){
     return (
