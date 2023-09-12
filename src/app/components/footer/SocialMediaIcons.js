@@ -1,36 +1,52 @@
+import Image from "next/image";
+
 export default function SocialMediaIcons(){
     return(
         <div
             className="flex flex-row gap-2 ml-5 items-start"
             id="ICONBUTTONSRoot"
         >
-            <img
-                src="https://file.rendit.io/n/FDwH0iia9xi3XzHd8T9m.svg" alt="ícone twitter"
-                className="w-6 shrink-0"
-                id="TWITTER"
+            <Image
+                src="/images/twitter.png" alt="ícone twitter"
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="w-auto h-auto"
             />
-            <img
-                src="https://file.rendit.io/n/DOhvjbpzXZrMFcQriMwC.svg" alt="ícone facebook"
-                className="w-6 shrink-0"
-                id="FACEBOOK"
+            <Image
+                src="/images/facebook.png" alt="ícone facebook"
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="w-auto h-auto"
             />
-            <img
-                src="https://file.rendit.io/n/TIEtALk7yyiAIUbefHZ7.svg" alt="ícone linkedin"
-                className="w-6 shrink-0"
-                id="LINKEDIN"
+            <Image
+                src="/images/linkedin.png" alt="ícone linkedin"
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="w-auto h-auto"
             />
             <a href="https://github.com/kelving0mes/devspot-app" target="_blank" rel="noopener noreferrer">
-                <img src="https://file.rendit.io/n/qTIGM00lsHl6lfX95IAJ.svg" alt="ícone github" className="w-6 shrink-0"
-                id="GITHUB"/>
+                <Image src="/images/github.png" alt="ícone github" 
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="w-auto h-auto"/>
             </a>
-            <img
-                src="https://file.rendit.io/n/eFebDWr4HRRCB6gV00ij.svg" alt="ícone Instagram"
-                className="w-6 shrink-0"
-                id="Instagram"
+            <Image
+                src="/images/instagram.png" alt="ícone Instagram"
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="w-auto h-auto"
             />
             <a href="https://www.youtube.com/@DevSpot23" target="_blank" rel="noopener noreferrer">
-                <img src="https://file.rendit.io/n/Vs4yNaxO0bhoGQnadzTA.svg" alt="ícone YouTube" className="self-center w-6 shrink-0"
-                id="YouTube"/>
+                <Image src="/images/youtube.png" alt="ícone YouTube" 
+                width="0"
+                height="0"
+                sizes="100vw"
+                className="w-auto h-auto"/>
             </a>
         </div>
 

@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Logo from "./Logo"
 
 export default function Header(props) {
@@ -6,8 +7,12 @@ export default function Header(props) {
          <div className="w-full h-7 justify-between inline-flex bg-[#35363a]">
             <Logo/>
             <div className="flex flex-row mr-4">
-               <img
-                  src="https://file.rendit.io/n/pShussQGcDIhAOtycBli.svg" alt="ícone ilustrativo navbar"
+               <Image
+                  src="/images/navbar.png" alt="ícone ilustrativo navbar"
+                  width="0"
+                  height="0"
+                  sizes="100vw"
+                  className="w-auto h-auto"
                />
             </div>
          </div>

@@ -4,6 +4,7 @@ import Header from "../../components/header/Header";
 import BotaoPadrao from "../../components/main/Botao";
 import Link from "next/link";
 import BackButton from "@/app/components/main/BackButton";
+import Image from "next/image";
 
 
 export default function Home() {
@@ -15,13 +16,11 @@ export default function Home() {
       </div>
       <div className="static flex flex-col justify-center items-center w-full space-y-20 gap-5">
         <div className="flex items-center gap-5">
-          <img
-            src="../Images/fallen.jpg" alt="Imagem de perfil"
-            style={{
-              width: '100px',
-              height: '100px',
-              borderRadius: '50%'
-            }}
+          <Image
+            src="/images/fallen.jpg" alt="Imagem de perfil"
+            width={100}
+            height={100}
+            className=" rounded-full"
           />
           <UserInfoCard
             name="Gabriel Toledo"
