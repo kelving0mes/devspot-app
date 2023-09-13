@@ -1,10 +1,10 @@
-import UserInfoCard from "../../components/main/UserCard";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import BotaoPadrao from "../../components/main/Botao";
 import Link from "next/link";
 import BackButton from "@/app/components/main/BackButton";
 import Image from "next/image";
+import UserCard from "@/app/components/main/UserCard";
 
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
             height={100}
             className=" rounded-full"
           />
-          <UserInfoCard
+          <UserCard
             name="Gabriel Toledo"
             cpf="444.765.678-98"
             email="professor@fallenstore.com"
